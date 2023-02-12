@@ -16,7 +16,7 @@ depositBtn.addEventListener('click', function(){
     depositValue.value = '';
 })
 withdrawBtn.addEventListener('click', function(){
-    if(+withdrawInput.value < +totalBalance.innerText){
+    if(+withdrawInput.value <= +totalBalance.innerText){
         withdrawBalance.innerText = +withdrawBalance.innerText + +withdrawInput.value;
         totalBalance.innerText = +totalBalance.innerText - +withdrawInput.value;
     }
