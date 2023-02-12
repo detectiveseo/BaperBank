@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome to our website</title>
+</head>
+<body class="h-screen flex flex-col justify-center">
+    <h1 class="text-center text-5xl font-bold">Let's get some <span class="text-red-600">Moooooney!!!!</span></h1>
+    <!-- Balance quary section  -->
+    <section class="flex justify-between w-8/12 mx-auto p-10 ">
+        <div class="bg-green-600 rounded px-20 py-5">
+            <h4 class="text-3xl text-white">Deposit</h4>
+            <h1 class="text-5xl font-bold text-white">$<span id="depositBalence">00</span></h1>
+        </div>
+        <div class="bg-amber-600 rounded px-20 py-5">
+            <h4 class="text-3xl text-white">Withdraw</h4>
+            <h1 class="text-5xl font-bold text-white">$<span id="withdrawBalance">00</span></h1>
+        </div>
+        <div class="bg-purple-600 rounded px-20 py-5">
+            <h4 class="text-3xl text-white">Balance</h4>
+            <h1 class="text-5xl font-bold text-white">$<span id="totalBalance">00</span></h1>
+        </div>
+    </section>
+
+    <!-- balance add remove section  -->
+    <section class="flex justify-between w-8/12 mx-auto">
+        <div class="bg-amber-600 px-28 py-10 rounded">
+            <h2 class="text-white text-2xl" >please deposit</h2>
+            <input class="w-full p-1 rounded my-2" type="number" name="" id="depositValue"><br>
+            <button class="bg-green-600 p-2 rounded text-white text-bold" id="depositBtn">Submit</button></div>
+        <div class="bg-sky-600 px-28 py-10 rounded">
+            <h2 class="text-white text-2xl" >Withdraw deposit</h2>
+            <input class="w-full p-1 rounded my-2" type="number" name="" id="withdrawInput">
+            <button class="bg-green-600 p-2 rounded text-white text-bold" id="withdrawBtn">Submit</button></div>
+    </section>
+    <script src="./js/bank.js"></script>
+</body>
+</html>
